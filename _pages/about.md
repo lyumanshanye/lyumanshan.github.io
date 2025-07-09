@@ -2,15 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: MS Student at <a href='https://www.sjtu.edu.cn/'>Shanghai Jiao Tong University</a>. Research Intern at GAIR Lab.
 
 profile:
   align: right
-  image: profile.jpg
+  image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
+    <p>GAIR Lab</p>
+    <p>Shanghai Jiao Tong University</p>
     <p>Shanghai, China</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
@@ -27,7 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi, I'm Lyumanshan Ye, an MS student at Shanghai Jiao Tong University. Currently, I am a student research intern at the GAIR Lab, where I am fortunate to be advised by Prof. Pengfei Liu. My research focuses on the intersection of Human-Computer Interaction (HCI) and Natural Language Processing (NLP).
+Hi, I'm Lyumanshan Ye, an MS student at [Shanghai Jiao Tong University](https://www.sjtu.edu.cn/). Currently, I am a student research intern at the GAIR Lab, where I am fortunate to be advised by Prof. Pengfei Liu. My research focuses on the intersection of Human-Computer Interaction (HCI) and Natural Language Processing (NLP).
 
 My research interests include:
 
