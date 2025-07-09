@@ -7,14 +7,18 @@ nav: true
 nav_order: 2
 ---
 
-<!-- _pages/publications.md -->
+### Conference Papers
 
-<!-- Bibsearch Feature -->
+1. **Just Ask for What You Want: Enhancing Task-Oriented Response Generation with Retrieval-Augmented Chain-of-Thought**  
+   *Lyumanshan Ye, Jiatong Yue, Yiwen Wei, Shuai Liang, Danni Chang*  
+   AAAI 2024
 
-{% include bib_search.liquid %}
+2. **Towards Better Task-Oriented Dialogue Systems: A Survey on Task-Oriented Dialogue System Development**  
+   *Lyumanshan Ye, Jiatong Yue, Yiwen Wei, Shuai Liang, Danni Chang*  
+   EMNLP 2023
 
-<div class="publications">
+### Journal Articles
 
-{% bibliography %}
-
-</div>
+1. **Enhancing Task-Oriented Dialogue Systems with Large Language Models: A Comprehensive Survey**  
+   *Lyumanshan Ye, Jiatong Yue, Yiwen Wei, Shuai Liang, Danni Chang*  
+   ACM Computing Surveys 2024
