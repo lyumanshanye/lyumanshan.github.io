@@ -27,8 +27,14 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi, I'm Lyumanshan Ye, an MS student at Shanghai Jiao Tong University. Currently, I am a student research intern at the GAIR Lab, where I am fortunate to be advised by Prof. Pengfei Liu. My research focuses on the intersection of Human-Computer Interaction (HCI) and Natural Language Processing (NLP).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/publications/) automatically.
+My research interests include:
+- Human-AI Interaction
+- Natural Language Processing
+- User Interface Design
+- Adaptive Systems
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I am passionate about creating AI systems that can seamlessly integrate with human workflows while maintaining user autonomy and control. My work aims to optimize the delegation of tasks to AI while preserving space for human-intensive decision-making.
+
+You can find my publications on the [publications page](/publications/). Feel free to connect with me through the social media links below.
