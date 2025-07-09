@@ -30,6 +30,7 @@ latest_posts:
 Hi, I'm Lyumanshan Ye, an MS student at Shanghai Jiao Tong University. Currently, I am a student research intern at the GAIR Lab, where I am fortunate to be advised by Prof. Pengfei Liu. My research focuses on the intersection of Human-Computer Interaction (HCI) and Natural Language Processing (NLP).
 
 My research interests include:
+
 - Human-AI Interaction
 - Natural Language Processing
 - User Interface Design
