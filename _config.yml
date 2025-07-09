@@ -196,13 +196,13 @@ keep_files:
 
 # Plug-ins
 plugins:
-  - jekyll-email-protect
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll/scholar
-  - jekyll-paginate-v2
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-relative-links
+  - jekyll-github-metadata
   - jemoji
-  - jekyll-toc
 
 # Sitemap settings
 defaults:

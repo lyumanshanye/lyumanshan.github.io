@@ -77,9 +77,7 @@ layout: default
   {% if page.related_publications %}
     <h2>References</h2>
     <div class="publications">
-      {% if site.scholar %}
-        {% bibliography --group_by none --cited_in_order %}
-      {% endif %}
+      {{ page.related_publications | markdownify }}
     </div>
   {% endif %}
 
