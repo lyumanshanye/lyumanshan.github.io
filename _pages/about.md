@@ -38,4 +38,4 @@ My research interests include:
 
 I am passionate about creating AI systems that can seamlessly integrate with human workflows while maintaining user autonomy and control. My work aims to optimize the delegation of tasks to AI while preserving space for human-intensive decision-making.
 
-You can find my publications on the [publications page](/publications/). Feel free to connect with me through the social media links below.
+You can find my publications on the [publications page]({{ '/publications' | relative_url }}). Feel free to connect with me through the social media links below.
