@@ -10,13 +10,29 @@ related_posts: false
 related_publications: true
 ---
 
-This post shows how to add bibliography to simple blog posts. We support every citation style that [jekyll-scholar](https://github.com/inukshuk/jekyll-scholar) does. That means simple citation like {% cite einstein1950meaning %}, multiple citations like {% cite einstein1950meaning einstein1905movement %}, long references like {% reference einstein1905movement %} or also quotes:
+This post shows how to add bibliography to simple blog posts.
 
-{% quote einstein1905electrodynamics %}
-Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-sed do eiusmod tempor.
+> **Note:**  
+> On GitHub Pages, custom tags like `{% cite %}` are **not supported**.  
+> You can manually add references as shown below.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing.
-{% endquote %}
+You can add simple citations using Markdown footnotes like this [^1], multiple citations like this [^1][^2], or long references with a blockquote:
+
+> **Einstein (1905) On the Movement of Small Particles Suspended in Stationary Liquids Required by the Molecular-Kinetic Theory of Heat**  
+> _Annalen der Physik, 17:549–560, 1905._
+
+Here is a sample quote from Einstein (1905):
+
+> Lorem ipsum dolor sit amet, consectetur adipisicing elit,  
+> sed do eiusmod tempor.
+>
+> Lorem ipsum dolor sit amet, consectetur adipisicing.
 
 If you would like something more academic, check the [distill style post]({% post_url 2018-12-22-distill %}).
+
+---
+
+## References
+
+[^1]: Einstein, A. (1950). _The Meaning of Relativity_. Princeton University Press.
+[^2]: Einstein, A. (1905). _On the Movement of Small Particles Suspended in Stationary Liquids Required by the Molecular-Kinetic Theory of Heat_. Annalen der Physik, 17:549–560.
