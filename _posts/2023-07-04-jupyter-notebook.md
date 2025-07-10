@@ -15,31 +15,21 @@ To include a jupyter notebook in a post, you can use the following code:
 
 ```liquid
 {::nomarkdown}
-{% assign jupyter_path = 'assets/jupyter/blog.ipynb' | relative_url %}
-{% capture notebook_exists %}{% file_exists assets/jupyter/blog.ipynb %}{% endcapture %}
-{% if notebook_exists == 'true' %}
-  {% jupyter_notebook jupyter_path %}
-{% else %}
-  <p>Sorry, the notebook you are looking for does not exist.</p>
-{% endif %}
+{% include notebooks/blog.html %}
 {:/nomarkdown}
 ```
 
 {% endraw %}
 
-Let's break it down: this is possible thanks to [Jekyll Jupyter Notebook plugin](https://github.com/red-data-tools/jekyll-jupyter-notebook) that allows you to embed jupyter notebooks in your posts. It basically calls [`jupyter nbconvert --to html`](https://nbconvert.readthedocs.io/en/latest/usage.html#convert-html) to convert the notebook to an html page and then includes it in the post. Since [Kramdown](https://jekyllrb.com/docs/configuration/markdown/) is the default Markdown renderer for Jekyll, we need to surround the call to the plugin with the [::nomarkdown](https://kramdown.gettalong.org/syntax.html#extensions) tag so that it stops processing this part with Kramdown and outputs the content as-is.
+While using the [Jekyll Jupyter Notebook plugin](https://github.com/red-data-tools/jekyll-jupyter-notebook) is convenient, it can significantly slow down your site's build time by converting the notebook every time. A much more performant approach is to pre-convert the notebook to a static HTML file and include it directly.
 
-The plugin takes as input the path to the notebook, but it assumes the file exists. If you want to check if the file exists before calling the plugin, you can use the `file_exists` filter. This avoids getting a 404 error from the plugin and ending up displaying the main page inside of it instead. If the file does not exist, you can output a message to the user. The code displayed above outputs the following:
+You can convert your notebook with the following command:
+`jupyter nbconvert --to html --template basic your_notebook.ipynb --output-dir _includes/notebooks/ --output your_notebook_name`
+
+Then, simply include the generated file in your post. This method is much faster and avoids build-time dependencies. The code displayed above outputs the following:
 
 {::nomarkdown}
-{% assign jupyter_path = "assets/jupyter/blog.ipynb" | relative_url %}
-{% capture notebook_exists %}{% file_exists assets/jupyter/blog.ipynb %}{% endcapture %}
-{% if notebook_exists == "true" %}
-{% jupyter_notebook jupyter_path %}
-{% else %}
-
-<p>Sorry, the notebook you are looking for does not exist.</p>
-{% endif %}
+{% include notebooks/blog.html %}
 {:/nomarkdown}
 
 Note that the jupyter notebook supports both light and dark themes.

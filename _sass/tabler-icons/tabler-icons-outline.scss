@@ -3,6 +3,8 @@
  * Tabler Icons 3.20.0 by tabler - https://tabler.io
  * License - https://github.com/tabler/tabler-icons/blob/master/LICENSE
  */
+@use 'sass:string';
+
 $ti-font-family: 'tabler-icons-outline' !default;
 $ti-font-path: './fonts' !default;
 $ti-font-display: null !default;
@@ -10,6 +12,7 @@ $ti-prefix: 'ti' !default;
 
 @font-face {
   font-family: $ti-font-family;
+  speak: never;
   font-style: normal;
   font-weight: 400;
   font-display: $ti-font-display;
@@ -20,7 +23,7 @@ $ti-prefix: 'ti' !default;
 
 .#{$ti-prefix} {
   font-family: $ti-font-family !important;
-  speak: none;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -33,7 +36,7 @@ $ti-prefix: 'ti' !default;
 }
 
 @function unicode($str) {
-  @return unquote("\"")+unquote(str-insert($str, "\\", 1))+unquote("\"")
+  @return unquote("\"")+unquote(string.insert($str, "\\", 1))+unquote("\"")
 }
 
 
